@@ -1,0 +1,47 @@
+inp = ""
+while inp != "rectangle" and inp != "circle" and inp != "triangle" and inp!= "square" and inp!= "rhombus" and inp!= "paralellogram":
+    inp = input("Would you like to calculate the perimeter of a rectangle, circle, triangle, square, rhombus or paralellogram? : ")
+    if inp != "rectangle" and inp != "circle" and inp != "triangle" and inp!= "square" and inp!= "rhombus" and inp!= "paralellogram":
+        print("You must type 'rectangle','circle','triangle','square','rhombus' or 'paralellogram'.")
+
+if inp == "rectangle":
+    l = float(input("Enter the length of a side of the rectangle ="))
+    u = float(input("Enter the breadth of the side of the rectangle ="))
+    b = 2 * (l + u)
+    print("Perimeter of the rectangle =", b)
+    
+   
+
+
+if inp == "circle":
+    k = float(input("Enter the Radius of the circle ="))
+    a = 2 * 22/7 * k
+    print("Perimeter of the circle =", a)
+    
+
+
+if inp == "triangle":
+    o = float(input("Enter the length of one side ="))
+    m = float(input("Enter the length of the second side ="))
+    E = float(input("Enter the length of the third side ="))
+    n = o + m + E
+    print("Perimeter of the triangle =",n)
+
+
+if inp == "square":
+    d = float(input("Enter the length of the side ="))
+    u = 4 * d
+    print("Perimeter of the square =",u)
+
+
+if inp == "rhombus":
+    y = float(input("Enter the length of the side ="))
+    j = 4 * y
+    print("Perimeter of the rhombus =",j)
+
+
+if inp == "paralellogram":
+    A = float(input("Enter the length of the base ="))
+    B = float(input("Enter the length of the side ="))
+    J = 2 * (A + B)
+    print("Perimeter of the paralellogram =",J)
